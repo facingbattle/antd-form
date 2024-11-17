@@ -1,0 +1,17 @@
+# 自动识别文本文件并统一为 LF
+* text=auto
+
+# 强制特定类型的文件使用 LF
+*.sh text eol=lf
+*.js text eol=lf
+*.css text eol=lf
+
+# 强制特定类型的文件使用 CRLF
+*.bat text eol=crlf
+
+# 二进制文件不转换换行符
+*.png binary
+*.jpg binary
+*.exe binary
+
+*.gitattributes text eol=lf
